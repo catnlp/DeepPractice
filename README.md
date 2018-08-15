@@ -14,6 +14,8 @@ $ pip install visdom
     |- DeepPractice
         |-- basic
         |-- backpropagation
+            |--- backpropagation.md
+            |--- image
         |-- regularization
         |-- optimization
         |-- cnn
@@ -23,4 +25,6 @@ $ pip install visdom
         |-- attention
         |-- ner
         |-- tool
+            |--- tool.md
+            |--- pytorch.ipynb
         
