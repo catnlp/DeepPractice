@@ -5,7 +5,7 @@ Deep practice for deep learning
 ## 1 Environment
 
 ```
-$ conda install pytorch torchvision
+$ conda install pytorch torchvision jupyter matplotlib
 $ pip install visdom
 ```
 
