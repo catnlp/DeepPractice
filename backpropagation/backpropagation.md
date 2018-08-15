@@ -35,7 +35,7 @@ e = (a + b) * (b + 1)
 
 计算图如下：
 
-<p><img width="80%" height="80%" src="image/tree-def.png" align=center /></p>
+<p><img width="60%" height="60%" src="image/tree-def.png" align=center /></p>
 
 令a=2, b=1，计算每个节点值并且利用偏导数的定义，求出不同层之间相邻节点的偏导数关系
 
