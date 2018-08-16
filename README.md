@@ -12,9 +12,12 @@ $ pip install visdom
 ## 2 Contents
 
     |- DeepPractice
+        |-- README.md
         |-- basic
+            |--- README.md
+            |--- activation.ipynb
         |-- backpropagation
-            |--- backpropagation.md
+            |--- README.md
             |--- image
         |-- regularization
         |-- optimization
@@ -25,6 +28,7 @@ $ pip install visdom
         |-- attention
         |-- ner
         |-- tool
-            |--- tool.md
+            |--- README.md
             |--- pytorch.ipynb
+            |--- matplotlib.ipynb
         

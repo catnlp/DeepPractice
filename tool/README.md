@@ -2,8 +2,6 @@
 
 ## PyTorch
 
-## Visdom
-
 ## Matplotlib
 
-
+## Visdom
