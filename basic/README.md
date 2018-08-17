@@ -14,6 +14,8 @@
 \frac{\partial}{\partial x} \sigma(x) = \sigma(x) (1 - \sigma(x))
 ```
 
+<p><img width="60%" height="60%" src="image/sigmoid.png" align=center /></p>
+
 输入实数值将其挤压到0到1范围内，适合输出为概率的情况，只在网络最后一层出现
 
 **问题**
@@ -23,11 +25,15 @@
 
 ### 1.2 Tanh
 
-这是一个经过拉升的sigmoid函数
-
 ```math
 tanh(x) = \frac{e^x-e^{-x}}{e^x+e^{-x}} = 2\sigma(2x) - 1
+
+\frac{\partial}{\partial x}tanh(x) = 1 - tanh^2(x)
 ```
+
+<p><img width="60%" height="60%" src="image/tanh.png" align=center /></p>
+
+Tanh函数是一个经过拉升的sigmoid函数
 
 Tanh解决了Sigmoid的输出是不是零中心的问题，但仍然存在饱和问题
 
@@ -37,7 +43,14 @@ Tanh解决了Sigmoid的输出是不是零中心的问题，但仍然存在饱和
 
 ```math
 relu(x) = max(0, x)
+
+\frac{\partial}{\partial x}relu(x)=\left\{\begin{array}{lc} 
+		0 & n<0\\
+		1 & n \geq 1\\
+	\end{array}\right.
 ```
+
+<p><img width="60%" height="60%" src="image/relu.png" align=center /></p>
 
 相较于sigmoid和tanh函数，ReLU对于随机梯度下降的收敛有巨大的加速作用；sigmoid和tanh在求导时含有指数运算，而ReLU求导几乎不存在任何计算量
 
