@@ -20,6 +20,8 @@ $ pip install visdom
             |--- README.md
             |--- image
         |-- regularization
+            |--- README.md
+            |--- image
         |-- optimization
         |-- cnn
         |-- rnn
