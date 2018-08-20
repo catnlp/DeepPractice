@@ -10,6 +10,10 @@ Deep practice for deep learning
 
 ## 1 Environment
 
+Python: 3.6.6
+
+PyTorch: 0.4.1
+
 ```
 $ conda install pytorch torchvision jupyter matplotlib
 $ pip install visdom
