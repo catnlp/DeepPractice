@@ -39,7 +39,7 @@ v_t = \frac{v_t}{1-\beta^t}
 
 ## 3 Momentum
 
-**动量梯度下降：**计算梯度的指数加权平均数，并利用该值来更新参数值
+**动量梯度下降** 计算梯度的指数加权平均数，并利用该值来更新参数值
 
 ```math
 v_{dw} = \beta v_{dw} + (1-\beta)dw
@@ -53,7 +53,7 @@ b = b - \alpha v_{db}
 \beta = 0.9
 ```
 
-<p><img width="60%" height="60%" align=center src="image/momentum.png" /></p>
+<p><img width="80%" height="80%" align=center src="image/momentum.png" /></p>
 
 进行一般的梯度下降将会得到图中的蓝色曲线，而使用Momentum梯度下降时，通过**累加**减少了抵达最小值路径上的摆动，加快了收敛，得到图中红色的曲线
 
@@ -62,7 +62,7 @@ b = b - \alpha v_{db}
 
 ## 4 RMSProp
 
-**RMSProp：**在对梯度进行指数加权平均的基础上，引入平方和平方根
+**RMSProp** 在对梯度进行指数加权平均的基础上，引入平方和平方根
 
 ```math
 S_{dw} = \beta s_{dw} + (1-\beta){dw}^2
@@ -78,7 +78,7 @@ b = b - \alpha \frac{db}{\sqrt{s_{db} + \epsilon}}
 
 \epsilon 用以提高数值稳定度，防止分母太小
 
-<p><img width="60%" height="60%" align=center src="image/rmsprop.png"  /></p>
+<p><img width="80%" height="80%" align=center src="image/rmsprop.png"  /></p>
 
 ## 5 Adam
 
